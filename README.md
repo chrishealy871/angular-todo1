@@ -1,28 +1,60 @@
-# TodoApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Angular Todo App
+ 
+## Overview
+ 
+### What is this app for?
+ 
+This is a Todo app. It helps users to keep track of any things that they have todo.
+ 
+### What does it do?
+ 
+This app will allow users to register and login. Once the users have done that, they'll be able to create items to add to their todo list. Once they've created their todo list, they'll be able to update the status of each item and even delete items!
+ 
+### How does it work
+ 
+This app uses JSON Web Tokens to authenticate users and keep them logged in. All the data is consumed from an API hosted on Heroku using AngularJS. The site is styled with Bootstrap.
+ 
+## Features
+ 
+### Existing Features
+- None yet!
+ 
+### Features Left to Implement
+- User Based Features
+    - Registration
+    - Login
+    - Logout
+- Todo Based Features
+    - Creating Todo Items
+    - Retrieving Todo Items
+    - Updating Todo Items
+    - Deleting Todo Items
+ 
+### Some the tech used includes:
+- [AngularJS](https://angularjs.org/)
+    - We use **AngularJS** to handle page routing, we also use it to make calls to the REST API and build custom directives
+- [Bootstrap](http://getbootstrap.com/)
+    - We use **Bootstrap** to give our project a simple, responsive layout
+- [npm](https://www.npmjs.com/)
+    - We use **npm** to help manage some of the dependencies in our application
+- [bower](https://bower.io/)
+    - **Bower** is used to manage the installation of our libraries and frameworks
+ 
+## Contributing
+ 
+### Getting the code up and running
+1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
+2. After you've that you'll need to make sure that you have **npm** and **bower** installed
+  1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
+  2. Once you've done this you'll need to run the following command:
+     `npm install -g bower # this may require sudo on Mac/Linux`
+3. Once **npm** and **bower** are installed, you'll need to install all of the dependencies in *package.json* and *bower.json*
+  ```
+  npm install
+ 
+  bower install
+  ```
+4. After those dependencies have been installed you'll need to make sure that you have **http-server** installed. You can install this by running the following: ```npm install -g http-server # this also may require sudo on Mac/Linux```
+5. Once **http-server** is installed run ```http-server -c-1```
+6. The project will now run on [localhost](http://127.0.0.1:8080)
+7. Make changes to the code and if you think it belongs in here then just submit a pull request
